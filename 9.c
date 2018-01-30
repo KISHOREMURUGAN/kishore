@@ -1,17 +1,10 @@
 # include <stdio.h>
 # define bool int
- 
 void quickSort(int *, int, int);
- 
 bool hasArrayTwoCandidates(int A[], int arr_size, int sum)
 {
     int l, r;
- 
-    /* Sort the elements */
     quickSort(A, 0, arr_size-1);
- 
-    /* Now look for the two candidates in the sorted 
-       array*/
     l = 0;
     r = arr_size-1; 
     while (l < r)
@@ -23,16 +16,13 @@ bool hasArrayTwoCandidates(int A[], int arr_size, int sum)
          else // A[i] + A[j] > sum
               r--;
     }    
-    return 0;
+    return 0
 }
- 
-/* Driver program to test above function */
 int main()
 {
     int A[] = {1, 4, 45, 6, 10, -8};
     int n = 16;
     int arr_size = 6;
-    
     if( hasArrayTwoCandidates(A, arr_size, n))
         printf("Array has two elements with sum 16");
     else
@@ -41,9 +31,6 @@ int main()
     getchar();
     return 0;
 }
- 
-/* FOLLOWING FUNCTIONS ARE ONLY FOR SORTING 
-    PURPOSE */
 void exchange(int *a, int *b)
 {
     int temp;
