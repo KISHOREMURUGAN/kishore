@@ -1,6 +1,5 @@
 #include <stdio.h>
 int addNumbers(int n);
-
 int main()
 {
     int num;
