@@ -13,8 +13,8 @@ for(i=1;i<=n;i++)
 	    }
 	}
       if(x!=n)
-	    {
-	     printf("%d is not a power of 2",n);
+       {
+	  printf("%d is not a power of 2",n);
        }
 return 0;
 }
